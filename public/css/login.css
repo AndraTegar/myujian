@@ -1,0 +1,82 @@
+/* login.css - LIGHT MODE DENGAN FOOTER BIRU */
+
+/* 1. Background Halaman PUTIH */
+.main-section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff; /* Putih */
+}
+
+/* 2. Wrapper Konten */
+.content-wrapper {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+/* 3. Gambar Responsif */
+.img-fluid {
+    max-height: 70vh;
+    object-fit: contain;
+}
+
+/* 4. Divider "Or" */
+.divider:after,
+.divider:before {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #eee;
+}
+
+/* 5. Header Login */
+.login-header {
+    font-weight: 700;
+    color: #0d6efd; /* Biru */
+    margin-bottom: 1.5rem;
+}
+
+/* 6. Tombol Sosmed Bulat */
+.btn-floating {
+    width: 40px;
+    height: 40px;
+    border-radius: 50% !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    font-size: 1.1rem;
+}
+
+/* 7. Input Form Standar (Putih) */
+.form-control-lg {
+    font-size: 1rem;
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+    background-color: #fff;
+    color: #212529;
+    border: 1px solid #ced4da;
+}
+
+/* 8. FOOTER KHUSUS (Background Biru, Teks Putih) */
+.footer-copyright {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    
+    /* INI KUNCINYA: Paksa warna background jadi Biru */
+    background-color: #0d6efd !important; 
+    color: #ffffff !important;
+    
+    position: relative;
+    z-index: 10;
+    flex-shrink: 0;
+}
+
+/* Pastikan link di footer warnanya putih */
+.footer-copyright a {
+    color: #ffffff !important;
+    text-decoration: none;
+}

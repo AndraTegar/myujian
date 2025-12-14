@@ -1,0 +1,131 @@
+:root {
+    --primary-guru: #4e73df;
+    --secondary-guru: #858796;
+    --success-guru: #1cc88a;
+    --info-guru: #36b9cc;
+    --warning-guru: #f6c23e;
+}
+
+body {
+    background-color: #f8f9fc;
+    font-family: 'Nunito', sans-serif;
+}
+
+/* 1. Navbar Khusus Guru */
+.navbar-guru {
+    background: white;
+    box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.15);
+}
+
+/* 2. Hero Section (Header Biru) */
+.guru-header {
+    background: linear-gradient(135deg, #4e73df 0%, #224abe 100%);
+    color: white;
+    padding: 3rem 0;
+    margin-bottom: -3rem; /* Agar kartu statistik menumpuk sedikit ke atas */
+    border-radius: 0 0 2rem 2rem;
+}
+
+/* 3. Kartu Statistik (Info Cards) */
+.stat-card {
+    border: none;
+    border-radius: 0.75rem;
+    box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.15);
+    transition: transform 0.2s;
+    background: white;
+    border-left: 0.25rem solid var(--primary-guru);
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+}
+
+.stat-icon {
+    font-size: 2rem;
+    color: #dddfeb;
+}
+
+/* ... css guru lainnya biarkan saja ... */
+
+/* 4. Update Kartu Mata Kuliah (Lebih Rapi) */
+.mk-card {
+    background: #fff;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05); /* Bayangan halus */
+    transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+    overflow: hidden;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.mk-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.mk-header {
+    background: linear-gradient(45deg, #f8f9fc, #fff);
+    border-bottom: 1px solid #edf2f9;
+    padding: 20px;
+    position: relative;
+}
+
+.mk-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    padding: 5px 12px;
+    border-radius: 50px;
+    font-size: 0.7rem;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.mk-body {
+    padding: 20px;
+    flex-grow: 1; /* Agar tombol selalu terdorong ke bawah jika teks pendek */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Style Tombol Aksi */
+.btn-action-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Membagi 2 kolom sama besar */
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.btn-custom {
+    border-radius: 8px;
+    padding: 8px 10px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+}
+
+.btn-custom i {
+    margin-right: 6px;
+}
+
+.btn-soal {
+    background-color: #4e73df;
+    color: white;
+    border: none;
+}
+.btn-soal:hover { background-color: #2e59d9; color: white; }
+
+.btn-nilai {
+    background-color: #fff;
+    color: #1cc88a;
+    border: 1px solid #1cc88a;
+}
+.btn-nilai:hover { background-color: #1cc88a; color: white; }
